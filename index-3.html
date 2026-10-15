@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>TCHOUNKAM Miguel — Développeur Web à Douala</title>
+    <meta
+      name="description"
+      content="Développeur web à Douala. Je crée des sites vitrines rapides, élégants et optimisés mobile qui apportent des clients à votre entreprise. Contact direct par WhatsApp."
+    />
+    <meta name="author" content="TCHOUNKAM Miguel" />
+    <meta name="theme-color" content="#05070d" />
+
+    <!-- Aperçu lors du partage (WhatsApp, LinkedIn...) -->
+    <!-- Après hébergement, remplacez par l'URL complète : https://votre-site.vercel.app/images/og-cover.jpg -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TCHOUNKAM Miguel — Développeur Web" />
+    <meta
+      property="og:description"
+      content="Des sites web modernes et performants pour les entreprises qui veulent gagner en crédibilité et en clients."
+    />
+    <meta property="og:image" content="images/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style-3.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <!-- ============ EN-TÊTE ============ -->
+    <header class="header" id="header">
+      <div class="container header__in">
+        <a href="#accueil" class="logo" aria-label="Accueil">
+          <span class="logo__mark">TM</span>
+          <span class="logo__text">TCHOUNKAM<span class="dot">.</span></span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Navigation principale">
+          <a href="#accueil">Accueil</a>
+          <a href="#services">Services</a>
+          <a href="#realisations">Réalisations</a>
+          <a href="#methode">Méthode</a>
+          <a href="#apropos">À propos</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="btn btn--sm nav__cta">Demander un devis</a>
+        </nav>
+
+        <button
+          class="burger"
+          id="burger"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <!-- ============ ACCUEIL ============ -->
+      <section class="hero" id="accueil">
+        <div class="glow glow--1"></div>
+        <div class="glow glow--2"></div>
+
+        <div class="container hero__grid">
+          <div class="hero__text reveal">
+            <span class="badge"><i class="pulse"></i> Disponible pour de nouveaux projets</span>
+
+            <h1>
+              Un site web professionnel qui <span class="grad">inspire confiance</span> et attire
+              des clients.
+            </h1>
+
+            <p class="lead">
+              Je suis TCHOUNKAM Miguel, développeur web à Douala. Je conçois des sites rapides,
+              élégants et parfaitement adaptés au mobile, pour que votre entreprise soit crédible
+              dès le premier regard.
+            </p>
+
+            <div class="hero__cta">
+              <a href="#contact" class="btn">Parler de mon projet</a>
+              <a href="#realisations" class="btn btn--ghost">Voir les réalisations</a>
+            </div>
+
+            <ul class="chips" aria-label="Points forts">
+              <li>Adapté au mobile</li>
+              <li>Chargement rapide</li>
+              <li>Contact WhatsApp direct</li>
+              <li>Référencement de base</li>
+            </ul>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="photo">
+              <img
+                src="moi.jpg"
+                alt="Portrait de TCHOUNKAM Miguel"
+                width="420"
+                height="520"
+                fetchpriority="high"
+                id="photo"
+              />
+              <div class="photo__fallback" id="photoFallback" aria-hidden="true">TM</div>
+            </div>
+
+            <div class="float float--a">
+              <strong>Douala</strong>
+              <span>Cameroun</span>
+            </div>
+            <div class="float float--b">
+              <strong>HTML · CSS · JS</strong>
+              <span>Code propre</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section class="section" id="services">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="eyebrow">Services</span>
+            <h2>Ce que je réalise pour votre entreprise</h2>
+            <p>
+              Des prestations claires, pensées pour un résultat concret : être trouvé, paraître
+              professionnel et être facile à contacter.
+            </p>
+          </header>
+
+          <div class="grid grid--3">
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">◧</div>
+              <h3>Site vitrine professionnel</h3>
+              <p>
+                Présentez votre activité avec clarté, crédibilité et des boutons d'action visibles
+                pour transformer les visiteurs en clients.
+              </p>
+              <span class="price">Sur devis</span>
+            </article>
+
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">↻</div>
+              <h3>Refonte de site existant</h3>
+              <p>
+                Modernisation du design, adaptation mobile et amélioration de l'expérience pour
+                redonner de la valeur à votre image en ligne.
+              </p>
+              <span class="price">Sur devis</span>
+            </article>
+
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">✦</div>
+              <h3>Design d'interfaces web</h3>
+              <p>
+                Conception d'écrans et de composants élégants, cohérents avec votre identité et
+                faciles à utiliser.
+              </p>
+              <span class="price">Sur devis</span>
+            </article>
+
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">⚡</div>
+              <h3>Optimisation &amp; performance</h3>
+              <p>
+                Amélioration de la vitesse, de la compatibilité mobile et des bases du
+                référencement pour une meilleure visibilité.
+              </p>
+              <span class="price">Sur devis</span>
+            </article>
+
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">☏</div>
+              <h3>Intégration WhatsApp &amp; contact</h3>
+              <p>
+                Formulaire et boutons qui envoient directement la demande du client sur votre
+                WhatsApp ou votre e-mail.
+              </p>
+              <span class="price">Sur devis</span>
+            </article>
+
+            <article class="card card--cta reveal">
+              <h3>Un besoin spécifique ?</h3>
+              <p>
+                Décrivez votre projet, je vous réponds avec une proposition adaptée à votre budget.
+              </p>
+              <a href="#contact" class="btn btn--sm">Obtenir une proposition</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ RÉALISATIONS ============ -->
+      <section class="section section--alt" id="realisations">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="eyebrow">Réalisations</span>
+            <h2>Des démonstrations de mon savoir-faire</h2>
+            <p>
+              Trois sites de démonstration pour des commerces de Douala : un restaurant, une
+              boutique de mode et un salon de beauté. Les noms et contenus sont fictifs ; le
+              fonctionnement (commande, réservation, WhatsApp) est celui d'un vrai site.
+            </p>
+          </header>
+
+          <!--
+            Placez demo-restaurant.html, demo-boutique.html et demo-salon.html
+            dans le même dossier que ce fichier pour que les boutons fonctionnent.
+          -->
+          <div class="grid grid--3" id="demos">
+            <!-- ===== Chez Mama Nadège ===== -->
+            <article class="demo reveal">
+              <div class="shot">
+                <!-- Aperçu de secours dessiné en CSS : visible tant que l'image est absente -->
+                <div class="mock mock--resto">
+                  <div class="mock__bar"><i></i><i></i><i></i><b></b></div>
+                  <div class="mock__body">
+                    <div class="mock__hero"><span></span><span></span><em></em></div>
+                    <div class="mock__row"><div></div><div></div><div></div></div>
+                  </div>
+                </div>
+                <!-- IMAGE : ajoutez votre capture d'écran dans images/demo-restaurant.jpg -->
+                <img
+                  src="images/demo-restaurant.jpg"
+                  alt="Aperçu du site Chez Mama Nadège"
+                  loading="lazy"
+                  onerror="this.parentElement.classList.add('no-img')"
+                />
+                <span class="shot__hint">Aperçu de démonstration</span>
+              </div>
+              <div class="demo__body">
+                <span class="demo__tag">Restaurant · Démo</span>
+                <h3>Chez Mama Nadège</h3>
+                <p>
+                  Menu interactif avec recherche, panier, plat du jour et statut ouvert/fermé en temps réel. La commande part directement sur WhatsApp.
+                </p>
+                <div class="tags">
+                  <span>Commande WhatsApp</span>
+                  <span>Panier</span>
+                  <span>Mobile Money</span>
+                </div>
+                <!-- LIEN : après hébergement, remplacez demo-restaurant.html par l'adresse complète du site -->
+                <a class="btn btn--sm" href="demo-restaurant.html" target="_blank" rel="noopener">
+                  Voir le site ↗
+                </a>
+              </div>
+            </article>
+
+            <!-- ===== Wax &amp; Style ===== -->
+            <article class="demo reveal">
+              <div class="shot">
+                <!-- Aperçu de secours dessiné en CSS : visible tant que l'image est absente -->
+                <div class="mock mock--shop">
+                  <div class="mock__bar"><i></i><i></i><i></i><b></b></div>
+                  <div class="mock__body">
+                    <div class="mock__hero"><span></span><span></span><em></em></div>
+                    <div class="mock__row"><div></div><div></div><div></div></div>
+                  </div>
+                </div>
+                <!-- IMAGE : ajoutez votre capture d'écran dans images/demo-boutique.jpg -->
+                <img
+                  src="images/demo-boutique.jpg"
+                  alt="Aperçu du site Wax &amp; Style"
+                  loading="lazy"
+                  onerror="this.parentElement.classList.add('no-img')"
+                />
+                <span class="shot__hint">Aperçu de démonstration</span>
+              </div>
+              <div class="demo__body">
+                <span class="demo__tag">Boutique de mode · Démo</span>
+                <h3>Wax &amp; Style</h3>
+                <p>
+                  Catalogue filtrable et triable, fiche produit avec choix de la taille, favoris enregistrés et commande envoyée sur WhatsApp.
+                </p>
+                <div class="tags">
+                  <span>E-commerce</span>
+                  <span>Favoris</span>
+                  <span>WhatsApp</span>
+                </div>
+                <!-- LIEN : après hébergement, remplacez demo-boutique.html par l'adresse complète du site -->
+                <a class="btn btn--sm" href="demo-boutique.html" target="_blank" rel="noopener">
+                  Voir le site ↗
+                </a>
+              </div>
+            </article>
+
+            <!-- ===== Éclat Beauté ===== -->
+            <article class="demo reveal">
+              <div class="shot">
+                <!-- Aperçu de secours dessiné en CSS : visible tant que l'image est absente -->
+                <div class="mock mock--salon">
+                  <div class="mock__bar"><i></i><i></i><i></i><b></b></div>
+                  <div class="mock__body">
+                    <div class="mock__hero"><span></span><span></span><em></em></div>
+                    <div class="mock__row"><div></div><div></div><div></div></div>
+                  </div>
+                </div>
+                <!-- IMAGE : ajoutez votre capture d'écran dans images/demo-salon.jpg -->
+                <img
+                  src="images/demo-salon.jpg"
+                  alt="Aperçu du site Éclat Beauté"
+                  loading="lazy"
+                  onerror="this.parentElement.classList.add('no-img')"
+                />
+                <span class="shot__hint">Aperçu de démonstration</span>
+              </div>
+              <div class="demo__body">
+                <span class="demo__tag">Salon de beauté · Démo</span>
+                <h3>Éclat Beauté</h3>
+                <p>
+                  Services et tarifs par catégorie, galerie photo, réservation en 3 étapes confirmée sur WhatsApp et acompte par Mobile Money.
+                </p>
+                <div class="tags">
+                  <span>Réservation</span>
+                  <span>Galerie</span>
+                  <span>Mobile Money</span>
+                </div>
+                <!-- LIEN : après hébergement, remplacez demo-salon.html par l'adresse complète du site -->
+                <a class="btn btn--sm" href="demo-salon.html" target="_blank" rel="noopener">
+                  Voir le site ↗
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MÉTHODE ============ -->
+      <section class="section" id="methode">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="eyebrow">Méthode</span>
+            <h2>Un processus simple, en 4 étapes</h2>
+            <p>Vous savez toujours où nous en sommes et ce qui vient ensuite.</p>
+          </header>
+
+          <ol class="steps">
+            <li class="reveal">
+              <span class="steps__n">01</span>
+              <h3>Échange</h3>
+              <p>Nous clarifions votre activité, vos clients cibles et votre objectif principal.</p>
+            </li>
+            <li class="reveal">
+              <span class="steps__n">02</span>
+              <h3>Proposition</h3>
+              <p>Je vous présente la structure du site, le délai et le tarif avant de commencer.</p>
+            </li>
+            <li class="reveal">
+              <span class="steps__n">03</span>
+              <h3>Création</h3>
+              <p>Je conçois et développe votre site, avec des points de validation réguliers.</p>
+            </li>
+            <li class="reveal">
+              <span class="steps__n">04</span>
+              <h3>Livraison</h3>
+              <p>Mise en ligne, vérifications sur mobile et ordinateur, puis accompagnement.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ À PROPOS ============ -->
+      <section class="section section--alt" id="apropos">
+        <div class="container about">
+          <div class="about__text reveal">
+            <span class="eyebrow">À propos</span>
+            <h2>Un développeur rigoureux, orienté résultats</h2>
+            <p>
+              Étudiant en génie logiciel et développeur web basé à Douala, je construis des sites
+              avec des fondamentaux solides : structure propre, design soigné, performance et
+              accessibilité.
+            </p>
+            <p>
+              Mon approche : comprendre votre besoin, soigner l'interface et livrer une solution
+              utile, claire et facile à faire évoluer.
+            </p>
+
+            <div class="skills" aria-label="Compétences">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+              <span>UI Design</span>
+              <span>Git / GitHub</span>
+              <span>Performance</span>
+              <span>Accessibilité</span>
+              <span>SEO de base</span>
+            </div>
+
+            <a href="#" class="btn btn--ghost btn--sm" id="cvBtn" hidden download>
+              Télécharger mon CV
+            </a>
+          </div>
+
+          <ul class="values reveal">
+            <li>
+              <strong>Clarté</strong>
+              <span>Des messages simples et des pages faciles à parcourir.</span>
+            </li>
+            <li>
+              <strong>Qualité</strong>
+              <span>Un code propre et un rendu soigné sur tous les écrans.</span>
+            </li>
+            <li>
+              <strong>Réactivité</strong>
+              <span>Une communication directe, par WhatsApp ou e-mail.</span>
+            </li>
+            <li>
+              <strong>Évolution</strong>
+              <span>Des bases solides pour faire grandir votre site.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section" id="faq">
+        <div class="container container--narrow">
+          <header class="section__head reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Questions fréquentes</h2>
+          </header>
+
+          <div class="faq reveal">
+            <details>
+              <summary>Combien coûte un site web ?</summary>
+              <p>
+                Le tarif dépend du nombre de pages et des fonctionnalités souhaitées. Décrivez
+                votre projet et je vous envoie une proposition claire avant toute décision.
+              </p>
+            </details>
+
+            <details>
+              <summary>Quel est le délai de réalisation ?</summary>
+              <p>
+                Un site vitrine simple peut être livré rapidement. Le délai exact est confirmé dans
+                la proposition, selon la taille du projet.
+              </p>
+            </details>
+
+            <details>
+              <summary>Mon site sera-t-il visible sur téléphone ?</summary>
+              <p>
+                Oui. Chaque site est conçu en priorité pour le mobile, puis adapté aux tablettes et
+                ordinateurs.
+              </p>
+            </details>
+
+            <details>
+              <summary>Puis-je recevoir les demandes de clients sur WhatsApp ?</summary>
+              <p>
+                Oui. Je peux intégrer un bouton et un formulaire qui envoient directement les
+                messages sur votre WhatsApp.
+              </p>
+            </details>
+
+            <details>
+              <summary>Pouvez-vous améliorer mon site actuel ?</summary>
+              <p>
+                Oui. La refonte permet de moderniser le design, la version mobile et l'expérience
+                de vos visiteurs.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section section--alt" id="contact">
+        <div class="container contact">
+          <div class="contact__info reveal">
+            <span class="eyebrow">Contact</span>
+            <h2>Parlons de votre projet</h2>
+            <p>
+              Décrivez votre besoin en quelques lignes. Votre message est préparé automatiquement
+              pour WhatsApp ou par e-mail, selon votre préférence.
+            </p>
+
+            <ul class="contact__list">
+              <li>
+                <span>E-mail</span>
+                <a href="mailto:tchounkammiguel@gmail.com" id="mailLink">
+                  tchounkammiguel@gmail.com
+                </a>
+              </li>
+              <li>
+                <span>WhatsApp</span>
+                <a href="https://wa.me/237679884015" id="waLink" target="_blank" rel="noopener">
+                  +237 679 884 015
+                </a>
+              </li>
+              <li>
+                <span>Localisation</span>
+                <b>Douala, Cameroun</b>
+              </li>
+            </ul>
+
+            <div class="social">
+              <a href="#" id="ghLink" target="_blank" rel="noopener" hidden>GitHub ↗</a>
+              <a href="#" id="liLink" target="_blank" rel="noopener" hidden>LinkedIn ↗</a>
+            </div>
+          </div>
+
+          <form class="form reveal" id="form" novalidate>
+            <div class="field">
+              <label for="name">Nom</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Votre nom"
+                required
+              />
+              <small class="err" data-for="name"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="vous@exemple.com"
+                required
+              />
+              <small class="err" data-for="email"></small>
+            </div>
+
+            <div class="field">
+              <label for="message">Votre projet</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Type d'entreprise, objectif du site, délai souhaité..."
+                required
+              ></textarea>
+              <small class="err" data-for="message"></small>
+            </div>
+
+            <div class="form__actions">
+              <button type="submit" class="btn" id="sendWa">Envoyer sur WhatsApp</button>
+              <button type="button" class="btn btn--ghost" id="sendMail">
+                Envoyer par e-mail
+              </button>
+            </div>
+
+            <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ PIED DE PAGE ============ -->
+    <footer class="footer">
+      <div class="container footer__in">
+        <a href="#accueil" class="logo">
+          <span class="logo__mark">TM</span>
+          <span class="logo__text">TCHOUNKAM<span class="dot">.</span></span>
+        </a>
+        <p>Développeur Web &amp; Étudiant en Génie Logiciel · Douala, Cameroun</p>
+        <p>© <span id="year">2026</span> TCHOUNKAM Miguel. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Bouton WhatsApp flottant -->
+    <a
+      class="wa-float"
+      id="waFloat"
+      href="https://wa.me/237679884015"
+      target="_blank"
+      rel="noopener"
+      aria-label="Écrire sur WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+        <path
+          d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.2c0-5.4 4.4-9.8 9.9-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.9-9.8 9.9zm5.4-7.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-1 1.2c-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"
+        />
+      </svg>
+    </a>
+
+    <script src="script-1.js"></script>
+  </body>
+</html>
